@@ -63,7 +63,7 @@ async def vpn(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # اجرای بات
 # -------------------------
 def main():
-    app = ApplicationBuilder().token(BOT_TOKEN).http_timeout(30).build()
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("vpn", vpn))
 
@@ -73,3 +73,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
